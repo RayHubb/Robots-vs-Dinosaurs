@@ -11,6 +11,3 @@ class Fleet:
         robot3 = robots.Robot('R4', 150, 60)
         self.robot_team.append(robot1, robot2, robot3)
         print(self.robot_team)
-
-
-Fleet.create_fleet()

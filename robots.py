@@ -17,4 +17,3 @@ class Robot:
             print(dinosaur.name + " has" + dinosaur.health + " left!")
 
 
-weapon1 = weapons.Weapon()

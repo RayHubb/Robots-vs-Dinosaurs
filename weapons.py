@@ -4,8 +4,11 @@ class Weapon:
         self.attack_power = power
 
 
-    def give_weapon(self):
-        weapon
+    def create_weapon(self):
+        weapon1 = Weapon()
+        weapon2 = Weapon()
+        weapon3 = Weapon()
+
 
 
 

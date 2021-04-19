@@ -1,4 +1,4 @@
-from robots import Robot
+from robot import Robot
 
 
 class Dinosaur:
@@ -8,23 +8,8 @@ class Dinosaur:
         self.energy = energy
         self.attack_power = attack_power
 
-
-    def fill_data(self):
-        self.type = input("What type of Dinosaur?")
-        self.health = int(input('Enter the health level from 50 - 200'))
-        self.energy = int(input('Enter the power level from 5 - 10'))
-        self.attack_power = int(input(''))
-
-    def print_data(self):
-        print('Type        :', self.type)
-        print('Health      :', self.health)
-        print('Energy      :', self.energy)
-        print('Attack Power:', self.attack_power)
-
-    def dino_attack(self, robot):
-        if self.health > 1:
-            Robot.health
-        else:
-            print(self.dinosaur.type)
-
-
+    def attack(self):
+        if self.health > 0:
+            print(self.name + ' is attacking!')
+            Dinosaur.health -= 35
+            print(Dinosaur.name + " has" + Dinosaur.health + " left!")

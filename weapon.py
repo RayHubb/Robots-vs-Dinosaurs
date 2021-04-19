@@ -1,12 +1,12 @@
 class Weapon:
-    def __init__(self):
-        self.type = ''
-        self.attack_power = ''
+    def __init__(self, weapon_type, power):
+        self.type = weapon_type
+        self.attack_power = power
 
-    def assign_sword(self):
-        self.type = 'Sword'
-        self.attack_power = 35
 
+weapon1 = Weapon('Sword', 40)
+weapon2 = Weapon('Shock Prod', 30)
+weapon3 = Weapon('Metal Fist', 35)
 
 
 

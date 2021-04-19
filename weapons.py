@@ -4,9 +4,8 @@ class Weapon:
         self.attack_power = power
 
 
-weapon1 = Weapon('Sword', 40)
-weapon2 = Weapon('Shock Prod', 30)
-weapon3 = Weapon('Metal Fist', 35)
+    def give_weapon(self):
+        weapon
 
 
 

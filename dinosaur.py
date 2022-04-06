@@ -1,13 +1,12 @@
 class Dinosaur:
-    def __init__(self, dino_type, health, energy, attack_power):
-        self.type = dino_type
-        self.health = health
+    def __init__(self, name, dinosaur_type, energy, attack_power, health):
+        self.name = name
+        self.dinosaur_type = dinosaur_type
         self.energy = energy
         self.attack_power = attack_power
+        self.health = health
 
-    def attack(self, name):
+    def dinosaur_attack(self):
         if self.health > 0:
-            print(self.name + ' is attacking!')
-            import robots
-            robots.health -= 35
-            print(robots.name + " has" + robots.health + " left!")
+            print(self.name + " is attacking!")
+

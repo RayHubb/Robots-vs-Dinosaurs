@@ -1,16 +1,20 @@
-import herd as herd
-
-import dinosaur
 from dinosaur import Dinosaur
 
 
-class Herd:
-    def __init__(self):
-        self.dino_herd = []
+class Herd(Dinosaur):
+    def __init__(self, dinosaur_herd):
+        self.dinosaur_herd = dinosaur_herd
 
     def create_herd(self):
-        dino1 = dinosaur.Dinosaur('T-Rex', 300, 125, 75)
-        dino2 = dinosaur.Dinosaur('Raptor', 200, 100, 70,)
-        dino3 = dinosaur.Dinosaur('R4', 150, 125, 60)
-        self.dino_herd.append(dino1, dino2, dino3)
-        print(self.dino_herd)
+        self.dinosaur_herd = []
+        dino1 = Dinosaur("Rex", "T-Rex", 120, 75, 300)
+        dino2 = Dinosaur("Tony", "Triceratops", 75, 50, 275)
+        dino3 = Dinosaur("Ed", "Raptor", 100, 100, 200)
+        self.dinosaur_herd.append(dino1)
+        self.dinosaur_herd.append(dino2)
+        self.dinosaur_herd.append(dino3)
+        for dino in self.dinosaur_herd:
+            print(dino.name + " the " + dino.dinosaur_type)
+        print(self.dinosaur_herd)
+        return self.dinosaur_herd
+

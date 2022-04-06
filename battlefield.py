@@ -1,14 +1,13 @@
-import fleet as fleet
-
 from fleet import Fleet
+from herd import Herd
 
 
-class Battlefield:
-    def __init__(self):
-        herd = herd.dino_herd
-        fleet = fleet.robot_team
+class Battlefield(Fleet, Herd):
+    def display_welcome(self):
+        print("-----------------------Welcome to Robots vs Dinosaurs!-----------------------")
+        print("-----------------------------------------------------------------------------")
+        print("")
+        print("")
+        print("Robots and dinosaurs will fight to the death! Who will win?")
 
     def
-
-
-
